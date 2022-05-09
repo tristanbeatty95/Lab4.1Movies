@@ -1,0 +1,70 @@
+import java.util.ArrayList;
+import java.util.Arrays;
+
+public class MovieList {
+
+	private String title;
+	private String category;
+		
+	public String getTitle() {
+		return title;
+	}
+	
+	public void setTitle(String title) {
+		this.title = title;
+	}
+	
+	public String getCategory() {
+		return category;
+	}
+	
+	public void setCategory(String category) {
+		this.category = category;
+	}
+	
+	public MovieList() {
+		
+	}
+	
+	public MovieList(String title, String category) {
+		this.title = title;
+		this.category = category;
+	}
+	
+	@Override
+	public String toString() {
+		return "MovieList [title=" + title + ", category=" + category + "]";
+	}
+	
+	public static void main(String[] args) {
+		
+		ArrayList<MovieList> movies = new ArrayList<>();
+		
+		MovieList m1 = new MovieList("Titanic", "drama");
+		movies.add(m1);
+		MovieList m2 = new MovieList("The Notebook", "romance");
+		movies.add(m2);
+		MovieList m3 = new MovieList("House of Gucci", "drama");
+		movies.add(m3);
+		MovieList m4 = new MovieList("Thirteen", "drama");
+		movies.add(m4);
+		MovieList m5 = new MovieList("West Side Story", "romance");
+		movies.add(m5);
+		MovieList m6 = new MovieList("Scream", "horror");
+		movies.add(m6);
+		MovieList m7 = new MovieList("The Hills Have Eyes", "horror");
+		movies.add(m7);
+		MovieList m8 = new MovieList("Cloudy With a Chance of Meatballs", "horror");
+		movies.add(m8);
+		MovieList m9 = new MovieList("Grease", "musical");
+		movies.add(m9);
+		MovieList m10 = new MovieList("Rent", "musical");
+		movies.add(m10);
+		
+		System.out.println(movies.get(0));
+		
+	}
+
+	
+
+}
